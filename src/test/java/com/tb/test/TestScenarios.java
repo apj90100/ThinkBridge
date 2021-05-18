@@ -49,7 +49,7 @@ public class TestScenarios {
 	    }
 
 		
-		@Test(enabled = false)
+		@Test(priority = 1)
 		public void Test1() throws InterruptedException{
 			
 			bean.openModel.click();
@@ -76,7 +76,7 @@ public class TestScenarios {
 			
 		}
 		
-		@Test(enabled = false)
+		@Test(priority = 2)
 		public void Test2() throws InterruptedException{
 			
 			bean.dropdown(); 
@@ -84,34 +84,20 @@ public class TestScenarios {
 		}
 		
 		
-		@Test(enabled = false)
+		@Test(priority = 3)
 		public void Test3() throws InterruptedException{
 			
 		bean.USA();
 				
 		}
 		
-		@Test(enabled = false)
+		@Test(priority = 4)
 		public void Test4() throws InterruptedException{
 			
 		bean.DragMe();
 					
 		}
 		
-		@Test(enabled = false)
-		public void Test5() throws InterruptedException{
-			
-		bean.print();
-					
-		}
-		
-		
-		@Test(priority = 1)
-		public void Test6() throws InterruptedException{
-			
-		bean.print();
-					
-		}
-		
+	
 }
 		
