@@ -2,7 +2,7 @@ package com.tb.test;
 
 import org.testng.annotations.Test;
 
-import com.tb.Resolver.ThinkBridgeBean;
+import com.tb.Resolver.Bean;
 
 import java.util.concurrent.TimeUnit;
 
@@ -19,7 +19,7 @@ public class TestScenarios {
 		public static WebDriver driver;
 		
 		//object creation for Bean class
-		ThinkBridgeBean bean = null;
+		Bean bean = null;
 		
 		//application url is saved in a string
 		private String url = "file:///C:/Users/apj007/Downloads/AutomationChallengeIDC/index.html";
@@ -33,7 +33,7 @@ public class TestScenarios {
 			System.setProperty("webdriver.chrome.driver",driverLocation);
 			//Initiate new driver
 			driver = new ChromeDriver();
-			bean = new ThinkBridgeBean(driver);
+			bean = new Bean(driver);
 			// Launch Website
 			driver.get(url);
 			// Maximize the browser

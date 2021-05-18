@@ -15,12 +15,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-public class ThinkBridgeBean {
+public class Bean {
 
 	private WebDriver driver;
 	 
 	//This initElements method will create all WebElements
-	public ThinkBridgeBean(WebDriver driver){
+	public Bean(WebDriver driver){
         this.driver = driver;
         
         PageFactory.initElements(driver, this);
