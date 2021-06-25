@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tb.test.TestScenarios">
+      <class name="com.tb.test.TestScenario">
         <methods>
-          <include name="Test2"/>
-          <include name="Test1"/>
           <include name="setUpStep"/>
+          <include name="Test1"/>
           <include name="CloseDriver"/>
         </methods>
-      </class> <!-- com.tb.test.TestScenarios -->
+      </class> <!-- com.tb.test.TestScenario -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
